@@ -25,7 +25,7 @@ class Solution {
                 end = mid-1;
             }
             else{
-                ans = mid;
+                ans = mid; //potential found
 
                 if(firststartindex){
                     end = mid-1;
