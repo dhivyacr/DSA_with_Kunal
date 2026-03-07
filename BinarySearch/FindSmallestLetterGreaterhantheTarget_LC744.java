@@ -1,3 +1,4 @@
+//0ms beats 100percent
 class Solution {
     public char nextGreatestLetter(char[] letters, char target) {
         int start = 0, end = letters.length - 1;
@@ -13,5 +14,17 @@ class Solution {
         }
 
         return letters[start % letters.length];
+    }
+}
+
+//another approch 0ms beats 100percent
+class Solution {
+    public char nextGreatestLetter(char[] letters, char target) {
+        for(char letter : letters){
+            if(letter>target){
+                return letter;
+            }
+        }
+        return letters[0];
     }
 }
