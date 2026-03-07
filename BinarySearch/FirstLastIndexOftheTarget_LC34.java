@@ -26,7 +26,8 @@ class Solution {
             }
             else{
                 ans = mid; //potential found
-
+                
+                //tofind the first occurance and last occurance of the potential ans 
                 if(firststartindex){
                     end = mid-1;
                 }
